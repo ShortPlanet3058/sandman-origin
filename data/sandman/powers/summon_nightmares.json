@@ -1,0 +1,19 @@
+{
+    "name": "Dream a Nighmare",
+    "description": "Dream yourself a nightmareish creature, a darker version of the pixie, to help you in your hunt.",
+    "type": "origins:active_self",
+    "cooldown": 100,
+    "key": {
+        "key": "key.origins.septenary_active",
+        "continuous": true
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "summon minecraft:phantom ~ ~4 ~"
+            }
+        ]
+    }
+}

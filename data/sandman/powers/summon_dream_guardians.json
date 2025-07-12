@@ -1,0 +1,41 @@
+{
+    "name": "Summon Dream Guardians",
+    "description": "Dream yourself two guardians at your sides to protect you.",
+    "type": "origins:active_self",
+    "cooldown": 100,
+    "key": {
+        "key": "key.origins.quinary_active",
+        "continuous": true
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "summon minecraft:iron_golem ~2 ~ ~"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "summon minecraft:iron_golem ~-2 ~ ~"
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 600,
+                "action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:execute_command",
+                            "command": "kill @e[type=minecraft:iron_golem]"
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "kill @e[type=minecraft:item]"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+

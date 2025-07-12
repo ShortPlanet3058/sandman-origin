@@ -1,0 +1,8 @@
+{
+
+    "type": "origins:modify_player_spawn",
+    "dimension": "dream_realm:dream_realm",
+    "name": "Dream Realm Native",
+    "description": "As the Sandman, you are native to the Dream Realm. You spawn there instead of the Overworld."
+    
+}

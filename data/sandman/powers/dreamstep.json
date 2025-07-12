@@ -1,0 +1,28 @@
+{
+	"name": "Dreamstep",
+	"description": "Teleport to where you are looking at, leaving a trail of sand.",
+	"type": "origins:active_self",
+	"cooldown": 20,
+	"key": {
+		"key": "key.saveToolbarActivator",
+		"continuous": true
+	},
+	"entity_action": {
+		"type": "origins:raycast",
+		"distance": 1000,
+		"block": true,
+		"entity": true,
+		"shape_type": "visual",
+		"fluid_handling": "any",
+		"command_at_hit": "tp @s ~ ~ ~",
+		"before_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "setblock ~ ~ ~ minecraft:sand"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Dream Vision",
+    "description": "You can see clearly at night like a nighmare crawling in the dark.",
+    "type": "origins:night_vision",
+    "strength": 0.5
+}

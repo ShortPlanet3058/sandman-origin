@@ -1,0 +1,14 @@
+{
+    "type": "origins:active_self",
+    "name": "Dream Fruit",
+    "description": "Create a mystical Dream Fruit. Give it to someone of your choosing. Onece they eat it, they will be brought to the Dream Realm.",
+    "cooldown": 600,
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": true
+    },
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "give @s minecraft:enchanted_golden_apple{display:{Name:'{\"text\":\"Dream Fruit\",\"color\":\"light_purple\",\"italic\":false}',Lore:['{\"text\":\"Eat to enter the Dream Realm\",\"color\":\"aqua\",\"italic\":false}']}} 1"
+    }
+}

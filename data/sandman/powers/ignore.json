@@ -1,0 +1,118 @@
+{
+  "name": "Dream Friend",
+  "description": "Because mobs also dream, they recognize you as their friend and do not attack you",
+  "type": "origins:action_over_time",
+  "interval": 20,
+  "entity_action": {
+	"type": "origins:and",
+	"actions": [
+	  {
+		"type": "origins:execute_command",
+		"command": "team add undead"
+	  },
+	  {
+		"type": "origins:execute_command",
+		"command": "team join undead @s"
+	  },
+	  {
+		"type": "origins:execute_command",
+		"command": "tag @s add sandman"
+	  },
+	  {
+		"type": "origins:execute_command",
+		"command": "team join undead @e[type=minecraft:zombie,tag=!sandman_ignore]"
+	  },
+	  {
+		"type": "origins:execute_command",
+		"command": "team join undead @e[type=minecraft:zombie]"
+	  },
+	  {
+		"type": "origins:execute_command",
+		"command": "team join undead @e[type=minecraft:skeleton]"
+	  },
+	  {
+		"type": "origins:execute_command",
+		"command": "team join undead @e[type=minecraft:spider]"
+	  },
+	  {
+		"type": "origins:execute_command",
+		"command": "team join undead @e[type=minecraft:zombie_villager]"
+	  },
+	  {	"type": "origins:execute_command",
+		"command": "team join undead @e[type=minecraft:phantom]"
+	  },
+	  {	"type": "origins:execute_command",
+		"command": "team join undead @e[type=minecraft:warden]"
+	  },
+	  {	"type": "origins:execute_command",
+		"command": "team join undead @e[type=minecraft:slime]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:enderman]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:endermite]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:ghast]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:zoglin]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:husk]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:shulker]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:stray]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:witherskeleton]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:blaze]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:witch]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:guardian]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:elder_guardian]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:drowned]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:illiager]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:evoker]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:pillager]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:vindicator]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:ravager]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:creeper]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:cave_spider]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:drowned]"
+	  },
+	  {	"type": "origins:execute_command",
+	  "command": "team join undead @e[type=minecraft:charged_creeper]"
+	  }
+	]
+  }
+}

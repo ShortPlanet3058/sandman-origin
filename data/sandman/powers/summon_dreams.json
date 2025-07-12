@@ -1,0 +1,19 @@
+{
+    "name": "Dream a Dream",
+    "description": "Dream yourself a small pixie, a very common creature in the Dream Realm, to help you in your adventures.",
+    "type": "origins:active_self",
+    "cooldown": 100,
+    "key": {
+        "key": "key.origins.quaternary_active",
+        "continuous": true
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "summon minecraft:allay ~ ~ ~"
+            }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+	"type": "origins:attribute",
+	"name": "Fragile Body",
+	"description": "You have only half as much health as a human.",
+	"modifier": {
+		"attribute": "minecraft:generic.max_health",
+		"operation": "addition",
+		"value": -10
+	}
+}

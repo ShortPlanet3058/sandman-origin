@@ -1,0 +1,10 @@
+{
+	"name": "Waking Vulnerability",
+	"description": "Outside the Dream Realm, you are mortal.",
+	"type": "origins:action_over_time",
+	"interval": 20,
+	"entity_action": {
+		"type": "origins:execute_command",
+		"command": "execute if dimension minecraft:overworld run gamemode survival @s"
+	}
+}

@@ -1,0 +1,11 @@
+{
+    "type": "origins:prevent_item_use",
+    "name": "Dream Diet",
+    "description": "You exsit because of dreams, and you cannot consume the dreamers. Instead, you can consume bread, cookies, and cake.",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "origins:meat"
+        }
+    }
+}

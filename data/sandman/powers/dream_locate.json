@@ -1,0 +1,18 @@
+{
+    "type": "origins:active_self",
+    "name": "Dream Locate",
+    "description": "In the Dream Realm, teleport to the nearest guest you have brought with a Dream Fruit.",
+    "cooldown": 100,
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": false
+    },
+    "condition": {
+        "type": "origins:dimension",
+        "dimension": "dream_realm:dream_realm"
+    },
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "execute as @p[tag=dream_guest,sort=nearest,limit=1] at @s run tp @a[tag=sandman,limit=1,sort=nearest] ~ ~ ~"
+    }
+}

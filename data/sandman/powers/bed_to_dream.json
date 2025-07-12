@@ -1,0 +1,44 @@
+{
+    "name": "Dreamwalk & Awaken",
+    "description": "Eat a glow berry in the Dream Realm to enter the Waking World and eat a glow berry in the Waking World to return to the Dream Realm.",
+    "type": "origins:multiple",
+    "key0": {
+        "condition": {
+            "type": "origins:dimension",
+            "dimension": "dream_realm:dream_realm"
+        },
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute in minecraft:overworld run tp @s ~ ~ ~"
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "glow_berries"
+            }
+        },
+        "trigger": "finish",
+        "priority": 0
+    },
+    "key1": {
+        "condition": {
+            "inverted": true,
+            "type": "origins:dimension",
+            "dimension": "dream_realm:dream_realm"
+        },
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute in dream_realm:dream_realm run tp @s ~ ~ ~"
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "glow_berries"
+            }
+        },
+        "trigger": "finish",
+        "priority": 0
+    }
+}

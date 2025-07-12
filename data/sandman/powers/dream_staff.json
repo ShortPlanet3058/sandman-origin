@@ -1,0 +1,42 @@
+{
+  "type": "origins:multiple",
+  "give_dream_staff": {
+	"type": "origins:action_on_callback",
+	"entity_action_chosen": {
+	  "type": "origins:execute_command",
+	  "command": "give @s minecraft:stick{display:{Name:'{\"text\":\"Dream Staff\"}'},Enchantments:[{id:vanishing_curse,lvl:1}]} 1",
+	  "permission_level": 4
+	},
+	"entity_action_respawned": {
+	  "type": "origins:execute_command",
+	  "command": "give @s minecraft:stick{display:{Name:'{\"text\":\"Dream Staff\"}'},Enchantments:[{id:vanishing_curse,lvl:1}]} 1",
+	  "permission_level": 4
+	},
+	"execute_chosen_when_orb": true,
+	"entity_action_lost": {
+	  "type": "origins:execute_command",
+	  "command": "clear @s minecraft:stick"
+	}
+  },
+  "give_dream_staff_return": {
+	"type": "origins:action_on_callback",
+	"entity_action_chosen": {
+	  "type": "origins:execute_command",
+	  "command": "give @s minecraft:blaze_rod{display:{Name:'{\"text\":\"Dream Staff of Return\"}'},Enchantments:[{id:vanishing_curse,lvl:1}]} 1",
+	  "permission_level": 4
+	},
+	"entity_action_respawned": {
+	  "type": "origins:execute_command",
+	  "command": "give @s minecraft:blaze_rod{display:{Name:'{\"text\":\"Dream Staff of Return\"}'},Enchantments:[{id:vanishing_curse,lvl:1}]} 1",
+	  "permission_level": 4
+	},
+	"execute_chosen_when_orb": true,
+	"entity_action_lost": {
+	  "type": "origins:execute_command",
+	  "command": "clear @s minecraft:blaze_rod{display:{Name:'{\"text\":\"Dream Staff of Return\"}'}}"
+	}
+  },
+  "name": "Dream Staves",
+  "description": "You wield two legendary staves: the Dream Staff, which banishes creatures to the Dream Realm, and the Staff of Return, which brings them back to the waking world. Both vanish on death and are restored when you respawn.",
+  "hidden": false
+}

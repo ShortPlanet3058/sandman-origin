@@ -1,0 +1,7 @@
+{   
+    "name": "Lighter than Air",
+    "description": "A dream is a light thing, and so are you. You take no fall damage.",
+    "type": "origins:modify_falling",
+    "take_fall_damage": false
+
+}

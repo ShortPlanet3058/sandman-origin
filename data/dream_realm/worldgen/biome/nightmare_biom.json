@@ -1,0 +1,81 @@
+{
+  "temperature": 0.4,
+  "downfall": 0.0,
+  "effects": {
+    "sky_color": 2236962,
+    "fog_color": 1973790,
+    "water_color": 329011,
+    "water_fog_color": 270131,
+    "ambient_sound": "minecraft:ambient.basalt_deltas.loop",
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2,
+      "sound": "minecraft:ambient.basalt_deltas.mood",
+      "tick_delay": 3000
+    },
+    "music": {
+      "sound": "minecraft:music.nether.basalt_deltas",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": true
+    },
+    "particle": {
+      "probability": 0.02,
+      "options": {
+        "type": "minecraft:smoke"
+      }
+    }
+  },
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [],
+
+    [ "minecraft:lake_lava_underground" ],
+
+    [ "minecraft:ore_gold_lower" ],
+
+    [],
+
+    [],
+
+    [ "minecraft:ore_redstone_lower", "minecraft:ore_iron_middle", "minecraft:ore_diamond_buried" ],
+
+    [],
+
+    [ "minecraft:spring_lava" ],
+
+    [
+      "minecraft:patch_dead_bush",
+      "minecraft:red_mushroom_normal",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:glow_lichen",
+      "minecraft:disk_gravel"
+    ],
+
+    []
+  ],
+  "spawners": {
+    "creature": [],
+    "ambient": [
+      { "type": "minecraft:bat", "weight": 6, "minCount": 1, "maxCount": 2 }
+    ],
+    "monster": [
+      { "type": "minecraft:enderman", "weight": 2, "minCount": 1, "maxCount": 2 },
+        { "type": "minecraft:zombie", "weight": 5, "minCount": 1, "maxCount": 2 },
+        { "type": "minecraft:skeleton", "weight": 4, "minCount": 1, "maxCount": 2 },
+      { "type": "minecraft:phantom", "weight": 1, "minCount": 1, "maxCount": 1 }
+    ],
+    "misc": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "underground_water_creature": [],
+    "axolotls": []
+  },
+  "spawn_costs": {},
+  "has_precipitation": false
+}

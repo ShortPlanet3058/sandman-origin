@@ -1,0 +1,71 @@
+{
+	"type": "origins:multiple",
+	"change_size": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 1,
+		"start_value": 0,
+		"hud_render": {
+			"should_render": false
+		},
+		"min_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:execute_command",
+					"command": "execute if dimension dream_realm:dream_realm run scale set pehkui:base 1.0 @s"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale persist set true @s"
+				}
+			]
+		},
+		"max_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:execute_command",
+					"command": "execute if dimension dream_realm:dream_realm run scale set pehkui:base 15 @s"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale persist set true @s"
+				}
+			]
+		}
+	},
+
+	"toggle": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:resource",
+				"resource": "*:*_change_size",
+				"comparison": "==",
+				"compare_to": 1
+			},
+			"if_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_change_size",
+				"change": -1,
+				"operation": "add"
+			},
+			"else_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_change_size",
+				"change": 1,
+				"operation": "add"
+			}
+		},
+		"cooldown": 10,
+		"hud_render": {
+			"should_render": false
+		},
+		"key": {
+			"key": "key.origins.tertiary_active"
+		}
+	},
+	"name": "Dream Giant",
+	"description": "You can change your size at will, becoming a giant in the Dream Realm. In the Waking World, you are your normal size.",
+		"hidden": false
+}

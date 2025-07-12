@@ -1,0 +1,10 @@
+{
+    "name": "Mantle of Reverie",
+    "description": "In the Dream Realm, you are limitless.",
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "execute if dimension dream_realm:dream_realm run gamemode creative @s"
+    }
+}

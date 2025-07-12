@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:the_end",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "dream_realm:dream_biom",
+          "parameters": {
+            "temperature": 0.7,
+            "humidity": 0.9,
+            "continentalness": 0.1,
+            "erosion": 0.3,
+            "depth": 0.0,
+            "weirdness": 0.1,
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "dream_realm:nightmare_biom",
+          "parameters": {
+            "temperature": 0.05,
+            "humidity": 0.05,
+            "continentalness": 0.95,
+            "erosion": 0.95,
+            "weirdness": 0.95,
+            "depth": 0.0,
+            "offset": 0.0
+          }
+        }
+      ]
+    }
+  }
+}

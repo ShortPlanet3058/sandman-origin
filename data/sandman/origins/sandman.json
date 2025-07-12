@@ -1,0 +1,31 @@
+{
+  "powers": [
+    "sandman:spawn_in_dream",
+    "sandman:bed_to_dream",
+    "sandman:real_survival",
+    "sandman:dreamstep",
+    "sandman:dream_locate",
+
+    "sandman:dream_staff",
+    "sandman:dream_fruit",
+
+    "sandman:dream_creative",
+    "sandman:size_change",
+    "sandman:summon_dreams",
+    "sandman:summon_nightmares",
+    "sandman:summon_dream_guardians",
+    "sandman:summon_nightmare_army",
+
+    "sandman:nofall",
+    "sandman:health",
+    "sandman:ignore",
+    "sandman:vision",
+    "sandman:vegetarian",
+    "sandman:daydream"
+  ],
+  "icon": "minecraft:end_rod",
+  "order": 10,
+  "impact": 3,
+  "name": "The Sandman",
+  "description": "You are Dream of the Endless — the ancient being who governs stories, sleep, and imagination. Supreme within the Dream Realm, you wield mythic power. But in the waking world, you are diminished — mortal, fragile, and bound by limitations. "
+}

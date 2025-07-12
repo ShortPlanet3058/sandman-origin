@@ -1,0 +1,11 @@
+{
+	"type": "origins:prevent_sleep",
+	"name": "Dreamless Daydream",
+	"description": "You cannot sleep as you are always in a state of daydreaming.",
+	"condition": {
+		"type": "origins:time_of_day",
+		"inverted": true,
+		"comparison": "<",
+		"compare_to": 12000
+	}
+}

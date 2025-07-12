@@ -1,0 +1,1 @@
+execute as @e[type=!player,nbt={HurtTime:10s}] at @s if entity @p[distance=..5,nbt={SelectedItem:{id:"minecraft:stick",tag:{display:{Name:'{"text":"Dream Staff"}'}}}}] if dimension dream_realm:dream_realm run tag @s add return_to_overworld

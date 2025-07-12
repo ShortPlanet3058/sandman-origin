@@ -1,0 +1,7 @@
+{
+  "values": [
+    "sandman:banish_to_dream_tick",
+    "sandman:return_to_overworld_tick",
+    "sandman:dream_fruit_consume"
+  ]
+}
