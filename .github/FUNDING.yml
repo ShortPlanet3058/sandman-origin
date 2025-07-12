@@ -12,4 +12,4 @@ lfx_crowdfunding: # Replace with a single LFX Crowdfunding project-name e.g., cl
 polar: # Replace with a single Polar username
 buy_me_a_coffee: # Replace with a single Buy Me a Coffee username
 thanks_dev: # Replace with a single thanks.dev username
-custom: https://www.paypal.com/donate?token=b6qTnMVSiA4Uo1s62S14tKA9NZ8S3lbQsc-xBs0mE0WWzkhnZ-yHYKlM0dHTEUX2WNcp4kpQk04kO_jy&locale.x=US # Replace with up to 4 custom sponsorship URLs e.g., ['link1', 'link2']
+custom: https://www.paypal.com/donate?token=b6qTnMVSiA4Uo1s62S14tKA9NZ8S3lbQsc-xBs0mE0WWzkhnZ-yHYKlM0dHTEUX2WNcp4kpQk04kO_jy&locale.x=US, https://www.curseforge.com/minecraft/data-packs/sandman-origin # Replace with up to 4 custom sponsorship URLs e.g., ['link1', 'link2']
